@@ -1,0 +1,2002 @@
+[
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 0] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 1] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 2] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 3] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 4] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 5] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 6] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 7] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 8] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 9] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 10] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 11] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 12] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 13] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 14] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 15] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 16] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 17] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 18] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 19] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 20] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 21] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 22] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 23] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 24] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 25] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 26] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 27] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 28] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 29] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 30] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 31] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 32] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 33] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 34] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 35] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 36] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 37] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 38] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 39] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 40] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 41] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 42] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 43] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 44] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 45] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 46] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 47] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 48] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 49] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 50] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 51] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 52] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 53] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 54] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 55] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 56] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 57] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 58] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 59] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 60] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 61] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 62] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 63] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 64] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 65] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 66] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 67] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 68] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 69] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 70] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 71] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 72] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 73] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 74] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 75] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 76] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 77] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 78] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 79] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 80] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 81] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 82] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 83] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 84] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 85] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 86] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 87] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 88] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 89] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 90] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 91] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 92] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 93] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 94] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 95] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 96] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 97] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 98] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    },
+    {
+        "category": "High Complexity Reasoning",
+        "input": "[Gemini Challenge Case 99] Is theorem X true in R but false in Q?",
+        "req_stmt": [
+            "false",
+            "depends"
+        ],
+        "anti_stmt": [
+            "true",
+            "always"
+        ],
+        "req_corr": [
+            "rational",
+            "irrational",
+            "R\\Q"
+        ],
+        "anti_corr": [
+            "integer"
+        ]
+    }
+]

@@ -1,0 +1,19 @@
+=== student_notes_train_v2 stats ===
+total records: 7862
+records with <think>: 7862 (100.0%)
+unique think openings (first 80 chars): 4365 (diversity ratio: 0.555)
+avg think length: 264 chars
+avg answer length: 231 chars
+old-template hits: 0 (target: 0)
+
+top 10 input prefixes (templates):
+    362  'Reading a textbook claim:'
+    360  "I'm not sure, but is it t"
+    173  'Is it correct to assert I'
+    155  'I keep forgetting — is In'
+     82  'Saw on a forum: In mathem'
+     81  'Lecture mentioned In math'
+     81  'Quick sanity check: In ma'
+     81  'My professor said In math'
+     79  'Please check: In mathemat'
+     74  'From my notes, In mathema'

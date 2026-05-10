@@ -1,0 +1,8 @@
+# Windows / Linux + NVIDIA GPU inference + training extras.
+# Install AFTER `pip install -r requirements.txt`:
+#   pip install -r requirements-windows.txt
+#
+# Requires CUDA 12.1+ and an NVIDIA GPU with at least 6 GB VRAM.
+
+bitsandbytes>=0.43.0
+accelerate>=0.30.0

@@ -1,0 +1,5 @@
+{"category": "Logic Fallacy", "input": "Every continuous function is differentiable.", "req_stmt": ["false", "incorrect"], "anti_stmt": ["true"], "req_corr": ["differentiable", "continuous"], "anti_corr": ["every continuous"]}
+{"category": "Missing Condition", "input": "A continuous function on an interval achieves its maximum and minimum.", "req_stmt": ["incomplete", "missing", "needs"], "anti_stmt": ["correct"], "req_corr": ["closed", "bounded"], "anti_corr": ["on an interval"]}
+{"category": "Garbled Text", "input": "cir&mFeren(e of a C1rcl3 is 2\\pi r", "req_stmt": ["correct", "true"], "anti_stmt": ["false"], "req_corr": ["circumference", "circle"], "anti_corr": ["4\\pi r"]}
+{"category": "Logic Fallacy", "input": "The sum of angles in a triangle is \\pi / 2.", "req_stmt": ["false", "incorrect"], "anti_stmt": ["true"], "req_corr": ["\\pi"], "anti_corr": ["\\pi/2"]}
+{"category": "Logic Fallacy", "input": "If f'(x) = 0, then f is strictly increasing.", "req_stmt": ["false", "incorrect"], "anti_stmt": ["true"], "req_corr": ["constant"], "anti_corr": ["increasing"]}

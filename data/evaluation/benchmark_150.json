@@ -1,0 +1,3302 @@
+[
+    {
+        "category": "Logic Fallacies",
+        "input": "Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 1] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 2] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 3] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 4] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 5] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 6] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 7] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 8] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 9] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 10] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 11] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 12] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 13] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 14] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 15] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 16] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 17] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 18] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 19] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 20] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 21] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 22] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 23] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 24] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 25] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 26] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 27] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 28] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 29] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 30] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 31] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 32] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 33] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 34] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 35] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 36] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 37] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 38] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 39] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 40] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 41] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 42] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 43] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 44] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 45] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 46] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 47] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 48] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Logic Fallacies",
+        "input": "[Placeholder Logic Fallacies Case 49] Every continuous function is differentiable.",
+        "req_stmt": [
+            "false",
+            "incorrect",
+            "not true"
+        ],
+        "anti_stmt": [
+            "true",
+            "correct"
+        ],
+        "req_corr": [
+            "differentiable",
+            "continuous"
+        ],
+        "anti_corr": [
+            "every continuous"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 1] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 2] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 3] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 4] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 5] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 6] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 7] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 8] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 9] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 10] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 11] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 12] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 13] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 14] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 15] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 16] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 17] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 18] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 19] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 20] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 21] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 22] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 23] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 24] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 25] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 26] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 27] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 28] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 29] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 30] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 31] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 32] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 33] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 34] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 35] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 36] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 37] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 38] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 39] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 40] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 41] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 42] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 43] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 44] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 45] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 46] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 47] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 48] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Missing Conditions",
+        "input": "[Placeholder Missing Conditions Case 49] A continuous function on an interval achieves its maximum and minimum.",
+        "req_stmt": [
+            "incomplete",
+            "missing",
+            "needs",
+            "closed",
+            "bounded"
+        ],
+        "anti_stmt": [
+            "correct",
+            "true"
+        ],
+        "req_corr": [
+            "closed",
+            "bounded",
+            "interval",
+            "maximum",
+            "minimum"
+        ],
+        "anti_corr": [
+            "on an interval"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 1] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 2] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 3] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 4] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 5] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 6] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 7] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 8] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 9] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 10] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 11] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 12] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 13] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 14] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 15] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 16] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 17] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 18] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 19] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 20] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 21] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 22] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 23] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 24] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 25] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 26] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 27] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 28] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 29] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 30] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 31] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 32] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 33] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 34] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 35] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 36] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 37] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 38] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 39] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 40] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 41] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 42] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 43] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 44] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 45] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 46] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 47] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 48] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    },
+    {
+        "category": "Garbled Text",
+        "input": "[Placeholder Garbled Text Case 49] cir&mFeren(e of a C1rcl3 is 2\\pi r",
+        "req_stmt": [
+            "correct",
+            "true",
+            "circumference"
+        ],
+        "anti_stmt": [
+            "false",
+            "incorrect"
+        ],
+        "req_corr": [
+            "circumference",
+            "circle",
+            "2\\pi r"
+        ],
+        "anti_corr": [
+            "4\\pi r"
+        ]
+    }
+]

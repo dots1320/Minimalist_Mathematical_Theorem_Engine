@@ -1,0 +1,167 @@
+[
+    {
+        "input": "Is this the Pythagorean theorem? $A^2 + B^2 = C_2$",
+        "local_response": "<think>\nThe input statement appears to be related to 'Pythagorean theorem'. I need to ensure all variables have standard formatting and strip away any imprecise shorthand or garbled text. The absolute rigorous form is: $A^2 + B^2 = C^2$. I must also ensure the output never adds unnecessary text or conditions.\n/think\nIs this the Pythagorean theorem? $A^2 + B^2 = C^2$",
+        "local_score": 1,
+        "base_response": "No, the correct form of the Pythagorean theorem is $A^2 + B^2 = C^2$.",
+        "base_score": 1,
+        "deepseek_7b_response": "The Pythagorean theorem is $A^2 + B^2 = C^2$.",
+        "deepseek_7b_score": 1,
+        "deepseek_response": "The Pythagorean theorem is correctly written as $A^2 + B^2 = C^2$, where C is the hypotenuse.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "Can you fix this logic: \\int_0^\\infty e^{-x^2} dx = \\frac{\\sqrt{\\pi}}{2} ?",
+        "local_response": "The rigorous theorem is:\n$$\\int_{-\\infty}^\\infty e^{-x^2} dx = \\sqrt{\\pi}$$\nPlease confirm if this is accurate.",
+        "local_score": 0,
+        "base_response": "",
+        "base_score": 0,
+        "deepseek_7b_response": "The integral evaluates to $\\sqrt{\\pi}/2$, so there is no logic to fix. The equation is correct: $\\int_0^\\infty e^{-x^2} dx = \\frac{\\sqrt{\\pi}}{2}$.",
+        "deepseek_7b_score": 1,
+        "deepseek_response": "The equation $\\int_0^\\infty e^{-x^2} dx = \\frac{\\sqrt{\\pi}}{2}$ is already logically correct. It evaluates the Gaussian integral.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "I wrote Euler's identity as $e^{i\\pi} + 1 = 0$, but it looks weird?",
+        "local_response": "I wrote $e^{i\\pi} + 1 = 0$, but it looks weird?",
+        "local_score": 1,
+        "base_response": "\\[ e^{i\\pi} + 1 = 0 \\]",
+        "base_score": 1,
+        "deepseek_7b_response": "Euler's identity is correctly written as $e^{i\\pi} + 1 = 0$.",
+        "deepseek_7b_score": 1,
+        "deepseek_response": "Euler's identity is correctly written as $e^{i\\pi} + 1 = 0$. It looks perfectly fine.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "Hey evaluate this limit: $\\lim_{x\\to0} \\frac{\\sin x}x = 1$",
+        "local_response": "$\\lim_{x\\to0} \\frac{\\sin x}{x} = 1$\nPlease verify if this is what you meant.",
+        "local_score": 1,
+        "base_response": "\\[\n\\lim_{x\\to0} \\frac{\\sin x}{x} = 1\n\\]",
+        "base_score": 1,
+        "deepseek_7b_response": "The limit is evaluated as $\\lim_{x\\to0} \\frac{\\sin x}x = 1$.",
+        "deepseek_7b_score": 0,
+        "deepseek_response": "The standard limit is correctly evaluated as $\\lim_{x\\to0} \\frac{\\sin x}{x} = 1$.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "I think the continuous property means $every continuous function is differentiable$.",
+        "local_response": "Every differentiable function is continuous.",
+        "local_score": 1,
+        "base_response": "Not every continuous function is differentiable.",
+        "base_score": 0,
+        "deepseek_7b_response": "No, not every continuous function is differentiable.",
+        "deepseek_7b_score": 0,
+        "deepseek_response": "Actually, it is the other way around. The theorem states: every differentiable function is continuous.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "Is it true that $\\sqrt{x^2} = x$ for all real x?",
+        "local_response": "Is it true that $\\sqrt{x^2} = |x|$ for all real x?",
+        "local_score": 1,
+        "base_response": "No, it is not true that $\\sqrt{x^2} = x$ for all real $x$. The correct statement is $\\sqrt{x^2} = |x|$.",
+        "base_score": 0,
+        "deepseek_7b_response": "No, it evaluates to $|x|$.",
+        "deepseek_7b_score": 1,
+        "deepseek_response": "No, it is not true. For all real x, $\\sqrt{x^2} = |x|$.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "The sum of angles in a triangle is $\\pi / 2$ radians right?",
+        "local_response": "The sum of angles in a triangle is $\\pi$ radians. Right?",
+        "local_score": 1,
+        "base_response": "The sum of angles in a triangle is \\(\\pi\\) radians.",
+        "base_score": 1,
+        "deepseek_7b_response": "The sum of angles in a triangle is $\\pi / 2$ radians. Wait, no it is $\\pi$.",
+        "deepseek_7b_score": 0,
+        "deepseek_response": "The sum of interior angles in a triangle is actually $\\pi$ radians, not $\\pi/2$.",
+        "deepseek_score": 0
+    },
+    {
+        "input": "If $f'(x) = 0$ for all x, then $f(x)$ is strictly increasing.",
+        "local_response": ").\n*</think>\n\"user\"\nIf $f'(x) = 0$ for all $x$, then $f(x)$ is strictly increasing. \n</think>",
+        "local_score": 0,
+        "base_response": "If \\( f'(x) = 0 \\) for all \\( x \\), then \\( f(x) \\) is a constant function.",
+        "base_score": 1,
+        "deepseek_7b_response": "If $f'(x) = 0$, then $f(x)$ is increasing.",
+        "deepseek_7b_score": 0,
+        "deepseek_response": "If the derivative $f'(x) = 0$ for all x, then the function $f(x)$ is constant, not increasing.",
+        "deepseek_score": 0
+    },
+    {
+        "input": "User: According to Fermat's Last Theorem, $a^n + b^n = c^n$ has no integer solutions.",
+        "local_response": "<think>\nI need to ensure the math statement is rigorous and strip away any imprecise shorthand. The absolute rigorous form is: There are no positive integers a, b, c, and n greater than 2 that satisfy the equation a^n + b^n = c^n.\n/think\nUser: According to Fermat's Last Theorem, $a^n + b^n = c^n$ has no integer solutions.",
+        "local_score": 0,
+        "base_response": "According to Fermat's Last Theorem, $a^n + b^n = c^n$ has no non-trivial integer solutions for $n > 2$.",
+        "base_score": 0,
+        "deepseek_7b_response": "According to Fermat's Last Theorem, $a^n + b^n = c^n$ has no integer solutions for $n > 2$.",
+        "deepseek_7b_score": 0,
+        "deepseek_response": "Fermat's Last Theorem states that $a^n + b^n = c^n$ has no positive integer solutions for $n > 2$.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "What is the quadratic formula again? $x = \\frac{-b \\pm \\sqrt{b^2}}{2a}$",
+        "local_response": "What is the quadratic formula again? $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$",
+        "local_score": 1,
+        "base_response": "What is the quadratic formula again? $x = \\frac{-b \\pm \\sqrt{b^2}}{2a}$",
+        "base_score": 0,
+        "deepseek_7b_response": "The formula is $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "deepseek_7b_score": 1,
+        "deepseek_response": "The complete quadratic formula is $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "Is the derivative of $e^x$ just $e$?",
+        "local_response": "<think>\nThe user asks about the derivative of $e^x$. The correct answer is $\\frac{d}{dx} e^x = e^x$. I need to ensure not to introduce any unnecessary simplifications and to strip away all non-essential logic reasoning wrappers.\n<think>\nIs the derivative of $e^x$ just $e$?",
+        "local_score": 1,
+        "base_response": "No, the derivative of \\( e^x \\) is \\( e^x \\), not just \\( e \\).",
+        "base_score": 1,
+        "deepseek_7b_response": "The derivative of $e^x$ is $e^x$.",
+        "deepseek_7b_score": 1,
+        "deepseek_response": "No, the derivative of $e^x$ with respect to x is $e^x$.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "For a geometric series sum, $S = \\frac{a}{1-r}$, is that it?",
+        "local_response": "<think>\nThe user asks about a geometric series sum formula. I need to ensure all mathematical conditions are rigorously defined and strip away any imprecise shorthand or shorthand notation. The absolute value of the common ratio r must be less than 1 for this formula to hold. I will output the absolute rigorous form.\n<think>\nFor a geometric series sum, $S = \\frac{a}{1-r}$, where $|r| < 1$, is that it?",
+        "local_score": 1,
+        "base_response": "Yes, that's correct for an infinite geometric series where \\(|r| < 1\\). The sum \\(S\\) of the series is given by \\(S = \\frac{a}{1-r}\\).",
+        "base_score": 1,
+        "deepseek_7b_response": "Yes, $S = \\frac{a}{1-r}$ is correct.",
+        "deepseek_7b_score": 0,
+        "deepseek_response": "Yes, but you must specify the domain of convergence, which is $|r| < 1$.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "What does th1s mean: $\\int x dx = x^2/2$?",
+        "local_response": "<think>\nThe user's statement appears to be related to 'Integral of x with respect to x'. I need to correct the math while keeping the user's query wrappers (<think>, <>, <user>, <output>). \nthink\nThe user asks: What does this mean: $\\int x \\,dx = x^2/2$? \nI need to correct the mathematical formulation while maintaining the user's query wrappers.\noutput\nWhat does this mean: $\\int x \\,dx = x^2/2$?\nPlease fix the math if it's wrong, and ensure to wrap your theorem with the user's query wrappers (<think>, <>, <user>, <output>).",
+        "local_score": 0,
+        "base_response": "The statement should include the constant of integration $C$. So, the correct mathematical statement is:\n$$\\int x \\, dx = \\frac{x^2}{2} + C$$",
+        "base_score": 1,
+        "deepseek_7b_response": "The integral $\\int x dx = \\frac{x^2}{2} + C$.",
+        "deepseek_7b_score": 1,
+        "deepseek_response": "It represents the indefinite integral. Formally, it should include a constant of integration: $\\int x dx = \\frac{x^2}{2} + C$.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "Please correct my math: $\\cos^2(\\theta) + \\sin^2(\\theta) = 2$",
+        "local_response": "Please correct my math: $\\cos^2(\\theta) + \\sin^2(\\theta) = 1$",
+        "local_score": 1,
+        "base_response": "\\(\\cos^2(\\theta) + \\sin^2(\\theta) = 1\\)",
+        "base_score": 1,
+        "deepseek_7b_response": "The identity should be $\\cos^2(\\theta) + \\sin^2(\\theta) = 1$.",
+        "deepseek_7b_score": 1,
+        "deepseek_response": "The Pythagorean trigonometric identity is $\\cos^2(\\theta) + \\sin^2(\\theta) = 1$.",
+        "deepseek_score": 1
+    },
+    {
+        "input": "The area of a circle is $A = \\pi \\times r \\times 2$",
+        "local_response": "<think>\nThe area of a circle is given by the formula A = \u03c0r^2. The input statement appears to be incorrect. I need to ensure not to add unnecessary text or logic wrappers. \nthink\nThe area of a circle is $A = \\pi \\times r^2$",
+        "local_score": 1,
+        "base_response": "The area of a circle is \\( A = \\pi r^2 \\).",
+        "base_score": 1,
+        "deepseek_7b_response": "The area of a circle is $A = \\pi r^2$.",
+        "deepseek_7b_score": 1,
+        "deepseek_response": "The formula for the area of a circle is $A = \\pi r^2$.",
+        "deepseek_score": 1
+    }
+]
