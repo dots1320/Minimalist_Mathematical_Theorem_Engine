@@ -15,6 +15,18 @@ venv/
 env/
 .venv/
 .env
+.env.*
+!.env.example
+
+# Local secrets / credentials
+*secret*
+*credentials*
+*.key
+*.pem
+*.p12
+*.pfx
+*_token.txt
+*_api_key.txt
 
 # OS
 .DS_Store
@@ -44,6 +56,8 @@ outputs/qwen_7b_minimalist_engine_v2_trained/adapter_model.safetensors
 outputs/*/checkpoint-*/
 outputs/*/runs/
 outputs/*/training_args.bin
+data/*_partial.json
+data/*_partial.jsonl
 *.log
 
 # === Runtime files ===
