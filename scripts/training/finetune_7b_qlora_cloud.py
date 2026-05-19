@@ -4,27 +4,26 @@ Cloud-tuned wrapper for finetune_7b_qlora.py — for 24GB+ GPUs (RTX 4090, A100,
 This script does NOT touch finetune_7b_qlora.py. It just calls the same
 training function with cloud-tuned default arguments injected.
 
-Cloud defaults vs local (8GB) defaults:
-  --batch                8     (local: 2)
-  --grad-accum           2     (local: 8)   — same effective batch=16
-  --no-grad-checkpointing    enabled        (local: off → grad ckpt is on)
-  --epochs               3     (same)
-  --lr                   1e-4  (same)
-  --max-len              1024  (same)
+Cloud defaults vs local defaults:
+  --batch                4
+  --grad-accum           4     effective batch=16
+  --epochs               3
+  --lr                   1e-4
+  --max-len              1024
 
 Speed gain on RTX 4090 vs RTX 5060 Laptop:
-  ~10-15x faster per step  (no checkpointing overhead + bigger batch)
+  ~10-15x faster per step
   Estimated total time:    1-2 hours for 3 epochs on 7000 samples
                            (vs ~80 hours on the laptop GPU)
 
-Typical usage on AutoDL:
+Typical usage on a cloud GPU:
 
   # Fresh training from scratch
   python scripts/training/finetune_7b_qlora_cloud.py
 
-  # Continue from your local checkpoint-200 (recommended after a crash)
+  # Continue from a local checkpoint after a crash
   python scripts/training/finetune_7b_qlora_cloud.py \\
-      --init-from-adapter outputs/qwen_7b_minimalist_engine_v2/checkpoint-200
+      --init-from-adapter outputs/qwen_7b_v3/checkpoint-200
 
   # Override any default by passing it on the command line — your value wins:
   python scripts/training/finetune_7b_qlora_cloud.py --batch 4 --epochs 5

@@ -6,91 +6,89 @@
 ![Weights](https://img.shields.io/badge/weights-Hugging%20Face-yellow)
 ![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 
-A compact mathematical theorem correction engine fine-tuned from `Qwen/Qwen2.5-7B-Instruct` with QLoRA.
+A compact mathematical statement judgment and correction engine fine-tuned from
+`Qwen/Qwen2.5-7B-Instruct`.
 
-The model is trained to rewrite flawed, incomplete, or garbled mathematical statements into cleaner theorem-style statements while preserving the user's surrounding wording. This GitHub repository contains the code, training data, and inference/training scripts. The trained weights are publicly released on Hugging Face.
+Given a mathematical statement, the model classifies it as **CORRECT**,
+**FALSE**, **INCOMPLETE**, **GARBLED_BUT_IDENTIFIABLE**, or **UNCLEAR**. It then
+returns a clean theorem-style correction, or reports `Cannot identify the
+intended theorem.` when the intended theorem is not identifiable.
 
-## Public Weights
+This repository contains the source code, the public v3 training dataset, and
+reproducible training and inference scripts. Large model artifacts are published
+separately on Hugging Face and are intentionally not committed to GitHub.
 
-The model weights are not stored directly in this GitHub repository because they are large model artifacts. They are public on Hugging Face:
+## Release Contents
 
-| Artifact | Hugging Face repository | Use case |
+The current release is **v3**, trained with QLoRA on 8,000 curated examples.
+
+| Artifact | Location | Use case |
 |---|---|---|
-| LoRA adapter | [`dots123/qwen-7b-theorem-engine-v2`](https://huggingface.co/dots123/qwen-7b-theorem-engine-v2) | Windows/Linux NVIDIA inference, retraining, merging |
-| MLX 4-bit model | [`dots123/qwen-7b-theorem-engine-v2-mlx-q4`](https://huggingface.co/dots123/qwen-7b-theorem-engine-v2-mlx-q4) | Direct macOS Apple Silicon inference |
+| LoRA adapter | [`dots123/qwen-7b-theorem-engine-v3`](https://huggingface.co/dots123/qwen-7b-theorem-engine-v3) | Windows / Linux NVIDIA inference, merging, retraining |
+| MLX 4-bit model | [`dots123/qwen-7b-theorem-engine-v3-mlx-q4`](https://huggingface.co/dots123/qwen-7b-theorem-engine-v3-mlx-q4) | Direct macOS Apple Silicon inference |
+| Public training data | [`data/student_notes_train_v3.json`](data/student_notes_train_v3.json) | Reproducing the fine-tune |
 
-The MLX model is derived from the same Qwen2.5-7B base model merged with this project's LoRA adapter, then converted to MLX 4-bit format for Apple Silicon.
+Training summary: 3 epochs, effective batch size 16, 942 optimizer steps, about
+1 hour on a single RTX 4090, final eval loss about 0.013.
 
-## Features
+## Behavior
 
-- **Theorem correction:** rewrites incorrect, incomplete, or noisy mathematical statements into cleaner theorem-style statements.
-- **Context preservation:** keeps surrounding user wording such as "is this right?" or "please check" where possible.
-- **QLoRA fine-tuning:** trains a compact LoRA adapter on top of `Qwen/Qwen2.5-7B-Instruct`.
-- **Public weights:** LoRA and MLX 4-bit releases are available from Hugging Face.
-- **Cross-platform inference:** supports NVIDIA GPU inference through `transformers`/`peft`/`bitsandbytes`, and Apple Silicon inference through MLX.
-- **Included training data:** the release dataset is included in `data/student_notes_train_v2.json`.
-- **Optional local-AI data generation:** experimental scripts are kept for users who want to extend the dataset with their own local model.
+| Category | Behavior |
+|---|---|
+| `correct` | Keep a correct theorem concise and clean. |
+| `false` | Replace a false statement with a correct theorem or statement. |
+| `missing_condition` | Add the missing hypotheses needed for correctness. |
+| `garbled_identifiable` | Infer the intended theorem and rewrite it fully. |
+| `formal_logic` | Handle formal or domain-specific mathematical statements. |
+| `need_check` | Output the fixed fallback when no theorem can be identified. |
+
+The chat scripts hide the model's `<think>...</think>` block by default. Type
+`:think` in the interactive chat to show it for debugging. The released chat
+scripts normalize the unclear fallback to English: `Cannot identify the intended
+theorem.`
+
+## Examples
+
+```text
+User: Every continuous function is differentiable.
+Assistant: Every differentiable function is continuous.
+
+User: A continuous function on an interval achieves its maximum and minimum.
+Assistant: Every continuous function on a closed and bounded interval achieves its maximum and minimum.
+
+User: Pythagorean: a sqrd plus b sqrd is c sqrd in a right triangle.
+Assistant: If $a$ and $b$ are the lengths of the legs of a right triangle and $c$ is the length of the hypotenuse, then $a^2 + b^2 = c^2$.
+
+User: Let thing be valid then A iff B maybe with x.
+Assistant: Cannot identify the intended theorem.
+```
 
 ## Installation
 
 Use Python 3.10 or newer.
 
-Install common dependencies:
-
 ```bash
-pip install -r requirements.txt
+pip install -r requirements/requirements.txt
+
+# Then install one platform-specific extra:
+pip install -r requirements/requirements-mac.txt        # macOS Apple Silicon, MLX
+pip install -r requirements/requirements-windows.txt    # Windows / Linux NVIDIA GPU
+pip install -r requirements/requirements-train.txt      # Cloud training on a 24 GB+ NVIDIA GPU
 ```
 
-Install the platform-specific extras you need:
+Install the Hugging Face CLI if you plan to download or upload artifacts:
 
 ```bash
-# Windows / Linux with NVIDIA GPU
-pip install -r requirements-windows.txt
-
-# macOS Apple Silicon
-pip install -r requirements-mac.txt
-
-# CUDA training environment
-pip install -r requirements-train.txt
-```
-
-## Quick Start: Windows / Linux NVIDIA
-
-Download the Qwen2.5-7B base model:
-
-```bash
-python scripts/training/download_7b.py
-```
-
-Download the public LoRA adapter:
-
-```bash
-hf download dots123/qwen-7b-theorem-engine-v2 \
-  --local-dir outputs/qwen_7b_minimalist_engine_v2_trained
-```
-
-Run the chat interface:
-
-```bash
-python scripts/inference/chat_windows.py
-```
-
-On Windows, you can also double-click:
-
-```text
-run_chat_windows.bat
+pip install -U huggingface_hub
 ```
 
 ## Quick Start: macOS Apple Silicon
 
-The recommended Mac path is to download the public MLX 4-bit model directly:
+Download the prebuilt MLX 4-bit model and run the chat:
 
 ```bash
-pip install -r requirements.txt
-pip install -r requirements-mac.txt
-
-hf download dots123/qwen-7b-theorem-engine-v2-mlx-q4 \
-  --local-dir models/qwen_7b_v2_mlx_q4
+hf download dots123/qwen-7b-theorem-engine-v3-mlx-q4 \
+  --local-dir models/qwen_7b_v3_mlx_q4
 
 python scripts/inference/chat_mac.py
 ```
@@ -101,195 +99,165 @@ You can also use the launcher:
 ./run_chat_mac.sh
 ```
 
-## Convert the LoRA Adapter to MLX Yourself
+## Quick Start: Windows / Linux NVIDIA
 
-If you want to reproduce the MLX release locally, download the base model and LoRA adapter:
-
-```bash
-python scripts/training/download_7b.py
-
-hf download dots123/qwen-7b-theorem-engine-v2 \
-  --local-dir outputs/qwen_7b_minimalist_engine_v2_trained
-```
-
-Merge the LoRA adapter into the base model:
+Download the Qwen2.5-7B base model and the v3 LoRA adapter:
 
 ```bash
-python scripts/inference/merge_lora.py
+HF_ENDPOINT=https://hf-mirror.com hf download Qwen/Qwen2.5-7B-Instruct \
+  --local-dir models/Qwen2.5-7B-Instruct
+
+hf download dots123/qwen-7b-theorem-engine-v3 \
+  --local-dir outputs/qwen_7b_v3
+
+python scripts/inference/chat_windows.py
 ```
 
-Convert the merged model to MLX 4-bit:
+On Windows, you can also double-click `run_chat_windows.bat`.
+
+## Run a Smoke Test
+
+On macOS with the MLX model downloaded:
 
 ```bash
-mlx_lm.convert \
-  --hf-path models/qwen_7b_v2_merged \
-  --mlx-path models/qwen_7b_v2_mlx_q4 \
-  -q --q-bits 4
+python scripts/inference/smoke_test_v3.py
 ```
 
-Then run:
+The smoke test runs six canonical prompts and checks for the expected correction
+patterns, including the unclear fallback.
+
+## Train v3 Yourself
+
+The full public training dataset is included at
+`data/student_notes_train_v3.json`.
+
+Install the training dependencies and download the base model first:
 
 ```bash
-python scripts/inference/chat_mac.py
+pip install -r requirements/requirements.txt
+pip install -r requirements/requirements-train.txt
+
+HF_ENDPOINT=https://hf-mirror.com hf download Qwen/Qwen2.5-7B-Instruct \
+  --local-dir models/Qwen2.5-7B-Instruct
 ```
 
-## Usage
+Then start the v3 QLoRA training run:
 
-```text
-User: Hey, is it true that every continuous function is d8ff3r%ntiable?
-Assistant: Hey, is it true that every differentiable function is continuous?
-
-User: Is it true that sqrt(x^2) = x for all real x?
-Assistant: Is it true that $\sqrt{x^2} = |x|$ for all real x?
+```bash
+python scripts/training/finetune_7b_qlora_cloud.py \
+  --data data/student_notes_train_v3.json \
+  --output outputs/qwen_7b_v3 \
+  --epochs 3
 ```
 
-Interactive commands:
+For a short training sanity check:
 
-- `exit`, `quit`, or `:q`: leave the chat.
-- `:think`: toggle display of the model's `<think>...</think>` block for debugging.
-
-## Training
-
-The release training data is included at:
-
-```text
-data/student_notes_train_v2.json
+```bash
+python scripts/training/finetune_7b_qlora_cloud.py --test \
+  --data data/student_notes_train_v3.json \
+  --output outputs/qwen_7b_v3_smoke
 ```
 
-Each record uses this schema:
+The trainer uses 4-bit NF4 QLoRA, LoRA rank 16, paged AdamW, cosine learning
+rate scheduling, and an effective batch size of 16 by default.
+
+## Build the MLX Model Yourself
+
+If you trained your own adapter, or want to reproduce the published Mac model,
+download the base model and run:
+
+```bash
+bash scripts/inference/build_v3_mlx.sh
+```
+
+This merges `outputs/qwen_7b_v3/` into the base model, converts the merged model
+to MLX 4-bit, and removes the large temporary merged model. The final output is
+`models/qwen_7b_v3_mlx_q4/`.
+
+## Dataset Format
+
+Each training record uses this schema:
 
 ```json
 {
-  "instruction": "...system instruction...",
-  "input": "...student or user statement...",
-  "output": "...target assistant response..."
+  "category": "missing_condition",
+  "instruction": "...system prompt...",
+  "input": "...student statement...",
+  "output": "<think>\n...\n</think>\nEvery continuous function on a closed and bounded interval achieves its maximum and minimum."
 }
 ```
 
-Download the base model:
-
-```bash
-python scripts/training/download_7b.py
-```
-
-Run a short smoke test:
-
-```bash
-python scripts/training/finetune_7b_qlora_cloud.py --test
-```
-
-Run the full QLoRA training preset:
-
-```bash
-python scripts/training/finetune_7b_qlora_cloud.py
-```
-
-The default training output directory is:
-
-```text
-outputs/qwen_7b_minimalist_engine_v2
-```
-
-The inference scripts expect the final adapter at:
-
-```text
-outputs/qwen_7b_minimalist_engine_v2_trained
-```
-
-## Updating the Public Hugging Face Weights
-
-After retraining, upload the LoRA adapter:
-
-```bash
-hf upload dots123/qwen-7b-theorem-engine-v2 \
-  outputs/qwen_7b_minimalist_engine_v2_trained .
-```
-
-After converting the merged model to MLX 4-bit, upload the Mac model:
-
-```bash
-hf upload-large-folder dots123/qwen-7b-theorem-engine-v2-mlx-q4 \
-  models/qwen_7b_v2_mlx_q4
-```
-
-## Optional Data Generation
-
-The included dataset is already sufficient to reproduce the released training run. The repository also keeps optional local-AI data-generation tooling for users who want to build their own dataset:
-
-```bash
-python scripts/data_processing/fetch_wikipedia_theorems.py
-python scripts/data_processing/regenerate_with_teacher.py --target 8000
-```
-
-This path is experimental and depends on the user's own local model or compatible generation setup. No private API key or credential is included in this repository.
+The `category` field is metadata for analysis. Training uses the
+`instruction`, `input`, and `output` fields.
 
 ## Repository Layout
 
 ```text
 .
 ├── README.md
-├── requirements.txt
-├── requirements-windows.txt
-├── requirements-mac.txt
-├── requirements-train.txt
-├── run_chat_windows.bat
+├── requirements/
+│   ├── requirements.txt
+│   ├── requirements-mac.txt
+│   ├── requirements-windows.txt
+│   └── requirements-train.txt
 ├── run_chat_mac.sh
-├── autodl_setup.sh
+├── run_chat_windows.bat
 ├── data/
-│   ├── student_notes_train_v2.json
-│   ├── student_notes_train_v2_stats.txt
-│   ├── student_notes_train.json
+│   ├── student_notes_train_v3.json
+│   ├── student_notes_train_v3_stats.txt
 │   └── wikipedia_theorems.json
 ├── scripts/
-│   ├── training/
-│   │   ├── download_7b.py
-│   │   ├── finetune_7b_qlora.py
-│   │   ├── finetune_7b_qlora_cloud.py
-│   │   └── callbacks.py
+│   ├── data_processing/
+│   │   ├── fetch_wikipedia_theorems.py
+│   │   └── generate_judgment_v3.py
 │   ├── inference/
-│   │   ├── chat_windows.py
+│   │   ├── build_v3_mlx.sh
 │   │   ├── chat_mac.py
-│   │   └── merge_lora.py
-│   └── data_processing/
-│       ├── fetch_wikipedia_theorems.py
-│       └── regenerate_with_teacher.py
-├── outputs/
-│   └── qwen_7b_minimalist_engine_v2_trained/
-└── models/
+│   │   ├── chat_windows.py
+│   │   ├── merge_lora.py
+│   │   └── smoke_test_v3.py
+│   └── training/
+│       ├── callbacks.py
+│       ├── download_7b.py
+│       ├── finetune_7b_qlora.py
+│       └── finetune_7b_qlora_cloud.py
+├── models/      # gitignored local model downloads
+└── outputs/     # gitignored local adapters and checkpoints
 ```
-
-Large model artifacts under `outputs/` and `models/` are ignored by Git and distributed through Hugging Face instead.
 
 ## Model Details
 
 | Item | Value |
 |---|---|
 | Base model | `Qwen/Qwen2.5-7B-Instruct` |
-| Fine-tuning method | QLoRA |
-| LoRA rank | 16 |
-| LoRA alpha | 32 |
-| LoRA dropout | 0.05 |
+| Fine-tuning method | QLoRA, 4-bit NF4 base with fp16 LoRA weights |
+| LoRA rank / alpha / dropout | 16 / 32 / 0.05 |
 | Target modules | `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, `down_proj` |
 | Optimizer | `paged_adamw_32bit` |
-| Learning rate | `1e-4` |
+| Learning rate | `1e-4`, cosine schedule |
+| Effective batch | 16 |
 | Max sequence length | 1024 |
-| Training data | `data/student_notes_train_v2.json` |
+| Epochs | 3 |
+| Training records | 8,000 |
+| Trainable params | 40,370,176, about 0.53% of the base model |
 
 ## Known Limitations
 
 - This is a research prototype, not a formal proof assistant.
 - Mathematical outputs should be checked before being used in teaching, writing, or research.
-- The model is optimized for theorem-style correction, not general chat.
-- The optional data-generation script is kept for experimentation and may need adaptation for a user's local model.
+- The model is tuned for compact, single-statement inputs. Long proofs and multi-paragraph documents are outside its main target.
+- No model weights are committed to this repository. Download them from Hugging Face or regenerate them locally.
 
 ## Acknowledgements
 
 - Base model: [Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
-- LoRA/QLoRA tooling: [Hugging Face PEFT](https://github.com/huggingface/peft)
+- LoRA / QLoRA tooling: [Hugging Face PEFT](https://github.com/huggingface/peft)
 - Transformers runtime: [Hugging Face Transformers](https://github.com/huggingface/transformers)
 - NVIDIA 4-bit inference: [bitsandbytes](https://github.com/TimDettmers/bitsandbytes)
 - Apple Silicon inference: [MLX](https://github.com/ml-explore/mlx)
 
 ## License
 
-Add a `LICENSE` file before publishing the final GitHub release.
+Released under the Apache License 2.0. See [LICENSE](LICENSE) for the full
+text. The base model `Qwen/Qwen2.5-7B-Instruct` is also Apache-2.0; please
+review its license terms before redistributing merged weights.

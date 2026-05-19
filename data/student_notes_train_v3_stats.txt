@@ -1,0 +1,25 @@
+=== judgment v3 stats ===
+total records: 8000
+estimated total api tokens: 1864443
+
+category counts:
+  correct: 1255
+  false: 1618
+  formal_logic: 1248
+  garbled_identifiable: 1865
+  missing_condition: 1612
+  need_check: 402
+
+need_check exact fixed output: 402/402
+
+copy ratios by category:
+  correct: exact=145/1255 (11.6%), near=660/1255 (52.6%)
+  false: exact=0/1618 (0.0%), near=51/1618 (3.2%)
+  formal_logic: exact=0/1248 (0.0%), near=0/1248 (0.0%)
+  garbled_identifiable: exact=0/1865 (0.0%), near=6/1865 (0.3%)
+  missing_condition: exact=0/1612 (0.0%), near=0/1612 (0.0%)
+  need_check: exact=0/402 (0.0%), near=0/402 (0.0%)
+
+estimated token length distribution:
+  input p50/p90/max: 20/39/116
+  answer p50/p90/max: 20/35/104

@@ -1,0 +1,13 @@
+# Cloud training on a single NVIDIA GPU with 24GB+ VRAM.
+# Install AFTER `pip install -r requirements/requirements.txt`:
+#   pip install -r requirements/requirements-train.txt
+#
+# Tested with PyTorch 2.3.0 / CUDA 12.1.
+
+bitsandbytes>=0.43.0
+accelerate==1.1.1
+datasets==3.1.0
+tensorboard>=2.15.0
+# Pin transformers / peft to versions known compatible with torch 2.3.0
+transformers==4.46.3
+peft==0.13.2

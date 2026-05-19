@@ -27,6 +27,9 @@ env/
 *.pfx
 *_token.txt
 *_api_key.txt
+*.env
+secrets.json
+credentials.json
 
 # OS
 .DS_Store
@@ -38,19 +41,14 @@ Thumbs.db
 *.swp
 
 # === Large model artifacts (do not commit; download / regenerate) ===
-# Base model: ~15 GB. Re-download via scripts/training/download_7b.py
-models/Qwen2.5-7B-Instruct/
-# Intermediate merged HF model: ~15 GB. Re-create via scripts/inference/merge_lora.py
-models/qwen_7b_v2_merged/
-# MLX 4-bit (~4 GB). Either re-create locally, or upload to HuggingFace Hub
-models/qwen_7b_v2_mlx_q4/
-# Any other model dirs
-models/*/
+# Base, merged, and MLX model directories can be several GB each.
+models/
 
 # === Trained adapter weights ===
-# adapter_model.safetensors is ~155 MB which exceeds GitHub's 100 MB file limit.
-# Either upload to HuggingFace Hub, or use Git LFS.
-outputs/qwen_7b_minimalist_engine_v2_trained/adapter_model.safetensors
+# adapter_model.safetensors is ~155 MB which exceeds GitHub's 100 MB file limit,
+# and the rest of the adapter directory is distributed alongside it on Hugging
+# Face. Keep the whole `outputs/` tree out of Git.
+outputs/
 
 # === Training artifacts ===
 outputs/*/checkpoint-*/
@@ -68,6 +66,9 @@ smoke.log
 # === Cloud / temp ===
 *.tar.gz
 .cache/
+
+# === Local dev scratch (not part of the public release) ===
+data/dev/
 
 # === HuggingFace cache (if it lands inside the project) ===
 **/huggingface/

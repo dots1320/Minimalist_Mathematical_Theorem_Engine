@@ -2,20 +2,21 @@
 Math Theorem Correction — Interactive Chat (Windows / Linux + NVIDIA GPU)
 
 Loads the Qwen2.5-7B base model in 4-bit (NF4) via bitsandbytes and applies
-the trained LoRA adapter on top. Designed for 6-8 GB VRAM consumer GPUs
+the trained v3 LoRA adapter on top. Designed for 6-8 GB VRAM consumer GPUs
 (GTX 1660, RTX 3060, RTX 4060 and up).
 
 For macOS, use `chat_mac.py` instead — bitsandbytes does NOT support macOS.
 
 CLI:
   python scripts/inference/chat_windows.py
-  python scripts/inference/chat_windows.py --adapter outputs/qwen_7b_minimalist_engine_v2_trained
+  python scripts/inference/chat_windows.py --adapter outputs/qwen_7b_v3
   python scripts/inference/chat_windows.py --show-think    # debug: show CoT
 """
 
 import argparse
 import os
 import re
+import select
 import sys
 import threading
 import time
@@ -29,24 +30,69 @@ from transformers import (
 )
 from peft import PeftModel
 
+UNCLEAR_ZH = "无法识别其意图定理。"
+UNCLEAR_EN = "Cannot identify the intended theorem."
+
 SYSTEM_PROMPT = """# Role
-You are a minimalist mathematical theorem engine. Your task is to correct mathematical statements while preserving the user's conversational context.
+You are a mathematical statement judgment and correction engine.
 
-# Guidelines
-1. Logic engine (Hidden CoT): You MUST first wrap your internal reasoning, deductions, and verification of the user's statement inside a <think>...</think> block.
-2. Core correction: After thinking, identify the mathematical theorem the user is attempting to state, and replace ONLY the math part with its rigorous, complete form.
-3. Garbled text recovery: If the math formulation contains typos or random characters, deduce the intended theorem in your <think> block.
-4. Context preservation: If the user includes conversational text (e.g., "I think", "is this right?", "User:"), output that exact conversational text unchanged in its original position outside the <think> block.
-5. Zero-fluff AI output: Outside of the <think> block, NEVER add conversational filler or judgments (e.g., "The correct statement is"). Only output the user's text and the corrected theorem.
-6. Formatting: Use standard LaTeX formatting for formulas ($...$ or $$...$$).
+# Task
+First decide whether the user's mathematical statement is:
+CORRECT, FALSE, INCOMPLETE, GARBLED_BUT_IDENTIFIABLE, or UNCLEAR.
 
-# Example
-Input: "Hey, is it true that every continuous function is d8ff3r%ntiable?"
+# Output rules
+1. You MUST first write a concise internal judgment inside a <think>...</think> block.
+2. If CORRECT, output the clean mathematical statement only.
+3. If FALSE, output the correct theorem or statement.
+4. If INCOMPLETE, output the complete rigorous theorem with missing assumptions.
+5. If GARBLED_BUT_IDENTIFIABLE, infer the intended theorem and rewrite it fully.
+6. If UNCLEAR, output exactly: Cannot identify the intended theorem.
+7. Never repeat malformed mathematical text unchanged.
+8. Preserve casual wrappers only when they do not damage mathematical rigor.
+9. Use standard LaTeX formatting for formulas ($...$ or $$...$$).
+
+# Examples
+Input: "Every continuous function is differentiable."
 Output: "<think>
-The user asks if continuous implies differentiable. This is mathematically false (Weierstrass function is a counterexample). The correct fundamental theorem relates differentiability to continuity: differentiable implies continuous. I will output the corrected theorem while keeping the user's query wrappers.
+Category: FALSE. This reverses the valid implication between differentiability and continuity.
 </think>
-Hey, is it true that every differentiable function is continuous?"
+Every differentiable function is continuous."
+
+Input: "Let thing be valid then A iff B maybe with x."
+Output: "<think>
+Category: UNCLEAR. The statement does not identify a specific mathematical theorem.
+</think>
+Cannot identify the intended theorem."
 """
+
+
+def _to_english_unclear(s: str) -> str:
+    return s.replace(UNCLEAR_ZH, UNCLEAR_EN)
+
+
+def read_user_input(prompt: str = "User: ", paste_window: float = 0.05) -> str:
+    """Read a line; if more lines are queued (paste), gather them too.
+
+    select() does not work on Windows console stdin, so on Windows we fall
+    back to single-line input(). Multi-line paste still works on macOS/Linux.
+    """
+    if os.name == "nt":
+        return input(prompt).strip()
+    sys.stdout.write(prompt)
+    sys.stdout.flush()
+    first = sys.stdin.readline()
+    if first == "":
+        raise EOFError
+    lines = [first.rstrip("\n")]
+    while True:
+        ready, _, _ = select.select([sys.stdin], [], [], paste_window)
+        if not ready:
+            break
+        nxt = sys.stdin.readline()
+        if nxt == "":
+            break
+        lines.append(nxt.rstrip("\n"))
+    return "\n".join(lines).strip()
 
 
 def load_model(base_path: str, adapter_path: str | None):
@@ -132,20 +178,33 @@ def stream_response(model, tokenizer, user_input: str, show_think: bool, max_new
     think_done = False
     think_started_indicator_printed = False
     full_text = ""
+    HOLD = len(UNCLEAR_ZH)
+    pending_tail = ""
+
+    def flush_post_think(chunk_text: str, *, final: bool = False):
+        nonlocal pending_tail
+        pending_tail += chunk_text
+        if final:
+            print(_to_english_unclear(pending_tail), end="", flush=True)
+            pending_tail = ""
+            return
+        if len(pending_tail) > HOLD:
+            emit = pending_tail[:-HOLD]
+            pending_tail = pending_tail[-HOLD:]
+            print(_to_english_unclear(emit), end="", flush=True)
 
     for chunk in streamer:
         full_text += chunk
         if show_think:
-            print(chunk, end="", flush=True)
+            print(_to_english_unclear(chunk), end="", flush=True)
             continue
 
         buffer += chunk
-        # Detect <think> opening — once seen, suppress until </think> closes.
         if not in_think and not think_done:
             if "<think>" in buffer:
                 pre, _, rest = buffer.partition("<think>")
                 if pre:
-                    print(pre, end="", flush=True)
+                    flush_post_think(pre)
                 buffer = rest
                 in_think = True
                 if not think_started_indicator_printed:
@@ -159,32 +218,28 @@ def stream_response(model, tokenizer, user_input: str, show_think: bool, max_new
                 in_think = False
                 think_done = True
             else:
-                # still inside think — keep buffering, don't print
                 continue
 
         if not in_think and think_done:
-            # safe to flush buffer
             if buffer:
-                print(buffer, end="", flush=True)
+                flush_post_think(buffer)
                 buffer = ""
         elif not in_think and not think_done:
-            # before any <think> — model may not emit one; flush conservatively
-            # but only flush up to last newline so we don't accidentally show <thi...
             if "<" not in buffer[-10:]:
-                print(buffer, end="", flush=True)
+                flush_post_think(buffer)
                 buffer = ""
 
-    # final flush
     if not show_think:
         if in_think:
-            # Model never closed <think>. Try regex fallback on full_text.
             cleaned = re.sub(r"<think>.*?(</think>|$)", "", full_text, flags=re.DOTALL).strip()
             if "<think>" in cleaned:
                 cleaned = cleaned.split("</think>")[-1].strip()
             print("\r" + " " * 60 + "\r", end="")
-            print(f"Assistant: {cleaned}", end="")
-        elif buffer:
-            print(buffer, end="", flush=True)
+            print(f"Assistant: {_to_english_unclear(cleaned)}", end="")
+        else:
+            flush_post_think("", final=True)
+            if buffer:
+                print(_to_english_unclear(buffer), end="", flush=True)
 
     print()
     thread.join()
@@ -194,7 +249,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base", default="models/Qwen2.5-7B-Instruct",
                         help="Path to base model directory")
-    parser.add_argument("--adapter", default="outputs/qwen_7b_minimalist_engine_v2_trained",
+    parser.add_argument("--adapter", default="outputs/qwen_7b_v3",
                         help="Path to LoRA adapter directory")
     parser.add_argument("--show-think", action="store_true",
                         help="Show the <think> CoT block (for debugging)")
@@ -216,7 +271,7 @@ def main():
     show_think = args.show_think
     while True:
         try:
-            user_input = input("User: ").strip()
+            user_input = read_user_input("User: ")
         except (EOFError, KeyboardInterrupt):
             print()
             break

@@ -1,5 +1,5 @@
 """
-QLoRA fine-tuning for Qwen2.5-7B-Instruct -> Math Theorem Correction Engine.
+QLoRA fine-tuning for Qwen2.5-7B-Instruct -> Math Theorem Engine v3.
 
 Key fixes vs. the previous version:
   * Loss masking: only the assistant turn contributes to loss; system prompt,
@@ -12,9 +12,8 @@ Key fixes vs. the previous version:
   * SampleGenerationCallback: prints input/expected/actual every 200 steps so
     you can SEE what the model is learning (or just memorizing).
 
-Default trains on the v2 dataset (data/student_notes_train_v2.json) and writes
-the adapter to outputs/qwen_7b_minimalist_engine_v2/. Pass --legacy to fall
-back to the original v1 setup.
+Default trains on the public v3 dataset (data/student_notes_train_v3.json) and
+writes the adapter to outputs/qwen_7b_v3/.
 """
 
 import argparse
@@ -60,12 +59,10 @@ def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--test", action="store_true",
                    help="Smoke test: 30 samples, 1 epoch, fast")
-    p.add_argument("--data", default="data/student_notes_train_v2.json",
+    p.add_argument("--data", default="data/student_notes_train_v3.json",
                    help="Training data JSON path")
-    p.add_argument("--legacy-data", action="store_true",
-                   help="Use the original v1 data file at data/student_notes_train.json")
     p.add_argument("--model", default="models/Qwen2.5-7B-Instruct")
-    p.add_argument("--output", default="outputs/qwen_7b_minimalist_engine_v2")
+    p.add_argument("--output", default="outputs/qwen_7b_v3")
     p.add_argument("--epochs", type=int, default=3)
     p.add_argument("--lr", type=float, default=1e-4)
     p.add_argument("--batch", type=int, default=2)
@@ -78,7 +75,7 @@ def parse_args():
                    help="Run SampleGenerationCallback every N optimizer steps (0=disable)")
     p.add_argument("--init-from-adapter", default=None,
                    help="Path to an existing LoRA adapter directory to use as initial weights "
-                        "(e.g. outputs/qwen_7b_minimalist_engine_v2/checkpoint-200). "
+                        "(e.g. outputs/qwen_7b_v3/checkpoint-200). "
                         "Useful for continuing training after a crash. Optimizer state is NOT "
                         "carried over; the LR schedule restarts. Default: train fresh adapter.")
     p.add_argument("--no-grad-checkpointing", action="store_true",
@@ -90,9 +87,7 @@ def parse_args():
 def load_raw_data(path: str):
     if not os.path.exists(path):
         print(f"[FATAL] Data file not found: {path}")
-        print("[HINT] If you haven't generated v2 yet, run:")
-        print("       python scripts/data_processing/regenerate_with_teacher.py --target 8000")
-        print("       (or pass --legacy-data to use the old data)")
+        print("[HINT] The public v3 dataset should be at data/student_notes_train_v3.json, or pass --data to a local JSON file.")
         sys.exit(1)
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -157,10 +152,6 @@ def build_eval_examples_for_callback(raw_examples, n=8, seed=42):
 def train():
     args = parse_args()
     check_dependencies()
-
-    if args.legacy_data:
-        args.data = "data/student_notes_train.json"
-        print("[INFO] Legacy mode: using v1 data")
 
     # Anti-sleep on Windows
     if os.name == "nt":

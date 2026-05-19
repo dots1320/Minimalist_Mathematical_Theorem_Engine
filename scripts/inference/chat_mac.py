@@ -10,7 +10,7 @@ this script requires Apple's MLX framework (Apple Silicon only).
 
 CLI:
     python scripts/inference/chat_mac.py
-    python scripts/inference/chat_mac.py --model models/qwen_7b_v2_mlx_q4
+    python scripts/inference/chat_mac.py --model models/qwen_7b_v3_mlx_q4
     python scripts/inference/chat_mac.py --show-think
 
 To produce the MLX 4-bit model from the HF LoRA adapter, see:
@@ -22,29 +22,76 @@ then:
 import argparse
 import os
 import re
+import select
 import sys
 import time
 
 from mlx_lm import load, stream_generate
 
+UNCLEAR_ZH = "无法识别其意图定理。"
+UNCLEAR_EN = "Cannot identify the intended theorem."
+
+
+def read_user_input(prompt: str = "User: ", paste_window: float = 0.05) -> str:
+    """Read a user line; if more lines are buffered (paste), gather them too.
+
+    When the user pastes a multi-line block, the OS feeds all lines to stdin
+    almost instantly. We peek with select() after each line: if more data is
+    queued within `paste_window` seconds, keep reading; otherwise return.
+
+    Single-line typing returns immediately because nothing else is queued.
+    """
+    sys.stdout.write(prompt)
+    sys.stdout.flush()
+    first = sys.stdin.readline()
+    if first == "":
+        raise EOFError
+    lines = [first.rstrip("\n")]
+    while True:
+        ready, _, _ = select.select([sys.stdin], [], [], paste_window)
+        if not ready:
+            break
+        nxt = sys.stdin.readline()
+        if nxt == "":
+            break
+        lines.append(nxt.rstrip("\n"))
+    return "\n".join(lines).strip()
+
 SYSTEM_PROMPT = """# Role
-You are a minimalist mathematical theorem engine. Your task is to correct mathematical statements while preserving the user's conversational context.
+You are a mathematical statement judgment and correction engine.
 
-# Guidelines
-1. Logic engine (Hidden CoT): You MUST first wrap your internal reasoning, deductions, and verification of the user's statement inside a <think>...</think> block.
-2. Core correction: After thinking, identify the mathematical theorem the user is attempting to state, and replace ONLY the math part with its rigorous, complete form.
-3. Garbled text recovery: If the math formulation contains typos or random characters, deduce the intended theorem in your <think> block.
-4. Context preservation: If the user includes conversational text (e.g., "I think", "is this right?", "User:"), output that exact conversational text unchanged in its original position outside the <think> block.
-5. Zero-fluff AI output: Outside of the <think> block, NEVER add conversational filler or judgments (e.g., "The correct statement is"). Only output the user's text and the corrected theorem.
-6. Formatting: Use standard LaTeX formatting for formulas ($...$ or $$...$$).
+# Task
+First decide whether the user's mathematical statement is:
+CORRECT, FALSE, INCOMPLETE, GARBLED_BUT_IDENTIFIABLE, or UNCLEAR.
 
-# Example
-Input: "Hey, is it true that every continuous function is d8ff3r%ntiable?"
+# Output rules
+1. You MUST first write a concise internal judgment inside a <think>...</think> block.
+2. If CORRECT, output the clean mathematical statement only.
+3. If FALSE, output the correct theorem or statement.
+4. If INCOMPLETE, output the complete rigorous theorem with missing assumptions.
+5. If GARBLED_BUT_IDENTIFIABLE, infer the intended theorem and rewrite it fully.
+6. If UNCLEAR, output exactly: Cannot identify the intended theorem.
+7. Never repeat malformed mathematical text unchanged.
+8. Preserve casual wrappers only when they do not damage mathematical rigor.
+9. Use standard LaTeX formatting for formulas ($...$ or $$...$$).
+
+# Examples
+Input: "Every continuous function is differentiable."
 Output: "<think>
-The user asks if continuous implies differentiable. This is mathematically false (Weierstrass function is a counterexample). The correct fundamental theorem relates differentiability to continuity: differentiable implies continuous. I will output the corrected theorem while keeping the user's query wrappers.
+Category: FALSE. This reverses the valid implication between differentiability and continuity.
 </think>
-Hey, is it true that every differentiable function is continuous?"
+Every differentiable function is continuous."
+
+Input: "Let thing be valid then A iff B maybe with x."
+Output: "<think>
+Category: UNCLEAR. The statement does not identify a specific mathematical theorem.
+</think>
+Cannot identify the intended theorem."
 """
+
+
+def _to_english_unclear(s: str) -> str:
+    return s.replace(UNCLEAR_ZH, UNCLEAR_EN)
 
 
 def stream_response(model, tokenizer, user_input: str, show_think: bool, max_tokens: int):
@@ -64,13 +111,31 @@ def stream_response(model, tokenizer, user_input: str, show_think: bool, max_tok
     think_done = False
     think_indicator_printed = False
     full_text = ""
+    # Hold back the last N chars of post-think output so we can rewrite
+    # the Chinese UNCLEAR phrase to English even when it streams in chunks.
+    HOLD = len(UNCLEAR_ZH)
+    pending_tail = ""
+
+    def flush_post_think(chunk_text: str, *, final: bool = False):
+        """Append chunk to pending_tail, print everything except the last HOLD chars.
+        On final, translate and print the entire remaining tail."""
+        nonlocal pending_tail
+        pending_tail += chunk_text
+        if final:
+            print(_to_english_unclear(pending_tail), end="", flush=True)
+            pending_tail = ""
+            return
+        if len(pending_tail) > HOLD:
+            emit = pending_tail[:-HOLD]
+            pending_tail = pending_tail[-HOLD:]
+            print(_to_english_unclear(emit), end="", flush=True)
 
     for resp in stream_generate(model, tokenizer, prompt=prompt, max_tokens=max_tokens):
         chunk = resp.text
         full_text += chunk
 
         if show_think:
-            print(chunk, end="", flush=True)
+            print(_to_english_unclear(chunk), end="", flush=True)
             continue
 
         buffer += chunk
@@ -79,7 +144,7 @@ def stream_response(model, tokenizer, user_input: str, show_think: bool, max_tok
             if "<think>" in buffer:
                 pre, _, rest = buffer.partition("<think>")
                 if pre:
-                    print(pre, end="", flush=True)
+                    flush_post_think(pre)
                 buffer = rest
                 in_think = True
                 if not think_indicator_printed:
@@ -97,11 +162,11 @@ def stream_response(model, tokenizer, user_input: str, show_think: bool, max_tok
 
         if not in_think and think_done:
             if buffer:
-                print(buffer, end="", flush=True)
+                flush_post_think(buffer)
                 buffer = ""
         elif not in_think and not think_done:
             if "<" not in buffer[-10:]:
-                print(buffer, end="", flush=True)
+                flush_post_think(buffer)
                 buffer = ""
 
     if not show_think:
@@ -110,16 +175,18 @@ def stream_response(model, tokenizer, user_input: str, show_think: bool, max_tok
             if "<think>" in cleaned:
                 cleaned = cleaned.split("</think>")[-1].strip()
             print("\r" + " " * 60 + "\r", end="")
-            print(f"Assistant: {cleaned}", end="")
-        elif buffer:
-            print(buffer, end="", flush=True)
+            print(f"Assistant: {_to_english_unclear(cleaned)}", end="")
+        else:
+            flush_post_think("", final=True)
+            if buffer:
+                print(_to_english_unclear(buffer), end="", flush=True)
 
     print()
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="models/qwen_7b_v2_mlx_q4",
+    parser.add_argument("--model", default="models/qwen_7b_v3_mlx_q4",
                         help="Path to MLX-format model directory (4-bit quantized + LoRA fused)")
     parser.add_argument("--show-think", action="store_true",
                         help="Show the <think> CoT block (debugging)")
@@ -146,7 +213,7 @@ def main():
     show_think = args.show_think
     while True:
         try:
-            user_input = input("User: ").strip()
+            user_input = read_user_input("User: ")
         except (EOFError, KeyboardInterrupt):
             print()
             break

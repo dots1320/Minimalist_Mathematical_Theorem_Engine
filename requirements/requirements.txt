@@ -1,0 +1,14 @@
+# Common dependencies (Python 3.10+).
+# For platform-specific extras, also install:
+#   - Windows / Linux + NVIDIA GPU:  pip install -r requirements/requirements-windows.txt
+#   - macOS / Apple Silicon:         pip install -r requirements/requirements-mac.txt
+#   - Cloud training:                pip install -r requirements/requirements-train.txt
+
+torch>=2.0.0
+transformers>=4.40.0
+peft>=0.10.0
+huggingface-hub>=0.23.0
+safetensors>=0.4.0
+numpy>=1.24.0
+tqdm>=4.65.0
+pyyaml>=6.0
